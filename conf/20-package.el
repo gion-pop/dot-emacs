@@ -8,6 +8,12 @@
 ;;; (package-install use-package)
   (require 'use-package))
 
+
+;;;; exec-path-from-shell.el
+;;;; https://github.com/purcell/exec-path-from-shell
+(exec-path-from-shell-initialize)
+
+
 ;;;; auto-install
 (use-package auto-install
   :config
@@ -18,7 +24,3 @@
     (auto-install-update-emacswiki-package-name t)
     ;; enable function "install-elisp"
     (auto-install-compatibility-setup)))
-
-;;;; exec-path-from-shell.el
-;;;; https://github.com/purcell/exec-path-from-shell
-(exec-path-from-shell-initialize)
