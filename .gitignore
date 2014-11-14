@@ -1,6 +1,10 @@
 elpa
 ddskk/**/*
 !ddskk/init
+.backup/
+.python-environments/
+ac-comphist.dat
+
 
 ### https://raw.github.com/github/gitignore/1a6b68c0068c6909206047b6eecaecb22ad67f64/Global/OSX.gitignore
 
