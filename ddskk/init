@@ -1,0 +1,29 @@
+(setq mac-pass-control-to-system nil)
+
+(setq skk-jisyo-code 'utf-8)
+
+;; コード中では自動的に英字にする。
+(require 'context-skk)
+
+;; 半角で入力したい文字
+(setq skk-rom-kana-rule-list
+      (nconc skk-rom-kana-rule-list
+	     '((";" nil nil)
+	       (":" nil nil)
+	       ("," nil nil)
+	       ("." nil nil))))
+(setq skk-kuten-touten-alist
+      '((jp . ("." . ","))
+	(en . ("." . ","))))
+
+(setq skk-server-host "localhost")
+(setq skk-server-portnum 1178)
+(setq skk-server-report-response t)
+;(setq skk-large-jisyo "/usr/local/share/skk/SKK-JISYO.L")
+
+(setq skk-sticky-key ";")
+(setq skk-japanese-message-and-error nil)
+
+(setq skk-show-icon t)
+(setq skk-dcomp-activate t)
+(setq skk-auto-insert-paren t)
