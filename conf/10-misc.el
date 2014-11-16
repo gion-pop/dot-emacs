@@ -24,5 +24,5 @@
 (defalias 'message-box 'message)
 
 ;;; 置換のキーバインド変更
-(global-set-key (kbd "C-c r") 'query-replace)
-(global-set-key (kbd "C-c R") 'query-replace-regexp)
+(bind-key "C-c r" 'query-replace)
+(bind-key "C-c R" 'query-replace-regexp)

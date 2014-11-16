@@ -1,7 +1,7 @@
 (eval-when-compile (progn (package-initialize) (require 'use-package)))
 
 ;;; dabbrev-expand - 動的略語展開
-(global-set-key (kbd "C-;") 'dabbrev-expand)
+(bind-key "C-;" 'dabbrev-expand)
 
 ;;; hippie-expand - 略語展開・補完を行うコマンドをまとめる
 (setq hippie-expand-try-functions-list
@@ -22,4 +22,4 @@
     try-complete-lisp-symbol-partially
     ;; Lispシンボル名全体
     try-complete-lisp-symbol))
-(global-set-key (kbd "C-,") 'hippie-expand)
+(bind-key (kbd "C-,") 'hippie-expand)
