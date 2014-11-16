@@ -1,6 +1,6 @@
 ;; swap command & option
 (setq ns-command-modifier (quote meta))
-(setq ns-alternate-modifier (quote super)))
+(setq ns-alternate-modifier (quote super))
 
 ;; Scroll settings (Magic Trackpad)
 (defun scroll-down-with-lines () "" (interactive) (scroll-down 3))
