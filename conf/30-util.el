@@ -19,6 +19,7 @@
 ;;;; auto-async-byte-compile
 ;;;; (package-install 'auto-async-byte-compile)
 (use-package auto-async-byte-compile
+  :ensure auto-async-byte-compile
   :config
   (progn
     (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)))
@@ -27,6 +28,7 @@
 ;;;; bm - マークをつける
 ;;;; (package-install 'bm)
 (use-package bm
+  :ensure bm
   ;; OS X では 既定で M-SPC がシステムにとられるので注意
   :bind (("M-SPC" . bm-toggle)
 	 ("M-[" . bm-previous)
