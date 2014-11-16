@@ -1,3 +1,5 @@
+(eval-when-compile (progn (package-initialize) (require 'use-package)))
+
 ;;; GCの上限を増やす
 (setq gc-cons-threshold (* 100000 gc-cons-threshold))
 

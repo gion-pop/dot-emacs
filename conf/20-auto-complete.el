@@ -1,8 +1,10 @@
+(eval-when-compile (progn (package-initialize) (require 'use-package)))
+
 ;;;; auto-complete
-;;;; (package-install 'auto-complete)
 ;;; configuration
 (use-package auto-complete-config
-  :bind ("M-/" . ac-start)
+  :ensure auto-complete
+  :bind (("M-/" . ac-start))
   :config
   (progn
     (add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/ac-dict")

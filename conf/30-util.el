@@ -1,3 +1,5 @@
+(eval-when-compile (progn (package-initialize) (require 'use-package)))
+
 ;;;; yasnippet
 ;;;; (package-install yasnippet)
 (use-package yasnippet

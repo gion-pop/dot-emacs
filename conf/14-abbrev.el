@@ -1,3 +1,5 @@
+(eval-when-compile (progn (package-initialize) (require 'use-package)))
+
 ;;; dabbrev-expand - 動的略語展開
 (global-set-key (kbd "C-;") 'dabbrev-expand)
 
