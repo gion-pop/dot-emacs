@@ -94,6 +94,16 @@
 ;;;; open-junk-file - 使い捨てのファイルを開く
 ;;;; (package-install 'open-junk-file)
 (use-package open-junk-file
+  :ensure open-junk-file
   :config
   (progn
     (setq open-junk-file-format "~/tmp/%Y%m%d-%H%M%S_")))
+
+
+;;;; smartparens - 括弧の補完
+;;; http://d.hatena.ne.jp/kiririmode/20131231/p1
+(use-package smartparens-config
+  :ensure smartparens
+  :config
+  (progn
+    (smartparens-global-mode t)))
